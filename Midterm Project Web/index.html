@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5c3d32983b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <h2 class="Logo">Register Page</h2>
+        <nav class="navigation-bar">
+            <a href="#">Home</a>
+            <a href="#">Categories</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <button class="btn-Login-popup">Login</button>
+        </nav>
+        <div class="menu-icon">&#9776;</div>
+    </header>
+
+    <div class="Sign-up-box">
+        <div class="form-box login">
+            <h2>REGISTER</h2>
+            <form id="registerForm" action="submit_form.html">
+                <div class="input-box" id="nameBox">
+                    <div class="input-row">
+                        <span class="icon">
+                            <i class="fa-solid fa-person " style="color: rgb(85, 85, 85);"></i>
+                        </span>
+                        <label for="name" style="font-size: 1em; color: #fff; font-weight: 550;">Name</label>
+                        <input type="text" id="nameInput">
+                    </div>
+                    <div class="input-row">
+                        <label for="surname" style="font-size: 1em; color: #fff; font-weight: 550;">Surname</label>
+                        <input type="text" id="surnameInput">
+                    </div>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <i class="fa-solid fa-building" style="color: rgb(85, 85, 85);"></i>
+                    </span>
+                    <label for="company" style="font-size: 1em; color: #fff; font-weight: 550;">Company</label>
+                    <select id="companyInput">
+                        <option value="" disabled selected></option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <i class="fa-solid fa-envelope" style="color: rgb(85, 85, 85);"></i>
+                    </span>
+                    <label for="email" style="font-size: 1em; color: #fff; font-weight: 550;">Email</label>
+                    <input type="text" id="emailInput">
+                    <span id="emailError" style="color: red;"></span>
+                </div>
+                <div class="input-box" id="phoneBox">
+
+                    <div class="input-row" id="areacodeBox">
+                        <span class="icon">
+                            <i class="fa-solid fa-phone" style="color: rgb(85, 85, 85);"></i>
+                        </span>
+                        <label for="area-code" style="font-size: 1em; color: #fff; font-weight: 550;">Area Code</label>
+                        <select id="areacodeInput">
+                            <option value="" disabled selected></option>
+                        </select>
+                    </div>
+                    <div class="input-row">
+                        <label for="phone" style="font-size: 1em; color: #fff; font-weight: 550;">Phone</label>
+                        <input type="text" id="phoneInput">
+                    </div>
+
+
+
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                    </span>
+                    <label for="subject" style="font-size: 1em; color: #fff; font-weight: 550;">Subject</label>
+                    <select id="subjectInput">
+                        <option value="" disabled selected></option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                    </span>
+                    <p style="font-size: 1em; color: #fff; font-weight: 550;"> Are you a beginner? </p>
+
+                    <div id="yes-no-option">
+
+                        <label for="yes" style="font-size: 1em; color: #fff; font-weight: 550;">Yes</label>
+                        <input type="radio" id="yesOption" name="options">
+                        <label for="no" style="font-size: 1em; color: #fff; font-weight: 550;">No</label>
+                        <input type="radio" id="noOption" name="options">
+
+                    </div>
+                </div>
+                <div class="input-box">
+                    <button class="btn-Login-popup" id="registerButton">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="validation.js"></script>
+</body>
+
+</html>
