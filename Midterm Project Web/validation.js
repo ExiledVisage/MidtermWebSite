@@ -1,7 +1,7 @@
 
 
 
-fetch('https://run.mocky.io/v3/23ecb5a6-8c7a-484e-a6b2-ef1ea29707bd') //AreaCodeAPI
+fetch('https://run.mocky.io/v3/fc4b6db5-cae5-4945-b93e-e76a8680579e') //AreaCodeAPI
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok.');
@@ -27,7 +27,7 @@ fetch('https://run.mocky.io/v3/23ecb5a6-8c7a-484e-a6b2-ef1ea29707bd') //AreaCode
     });
 
 
-fetch('https://run.mocky.io/v3/cde7703f-7ee6-4cab-a988-828ba586d5a2') //CompanyAPI
+fetch('https://run.mocky.io/v3/0cec2d23-1a06-4029-9e6d-304c034d6eae') //CompanyAPI
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok.');
@@ -52,7 +52,7 @@ fetch('https://run.mocky.io/v3/cde7703f-7ee6-4cab-a988-828ba586d5a2') //CompanyA
         // Handle errors here
     });
 
-fetch('https://run.mocky.io/v3/2e7506e2-bf9a-45e1-8ec5-196f1bde56a7') //SubjectAPI
+fetch('https://run.mocky.io/v3/bce7c401-0bc6-48d4-9604-94c8e893baa0') //SubjectAPI
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok.');
