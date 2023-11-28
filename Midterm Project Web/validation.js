@@ -9,21 +9,21 @@ fetch('https://run.mocky.io/v3/fc4b6db5-cae5-4945-b93e-e76a8680579e') //AreaCode
         return response.json();
     })
     .then(data => {
-        // Handle the data from the API
+
         const areacodeDropdown = document.getElementById('areacodeInput');
 
-        // Loop through the fetched data and create options for the dropdown
+
         data.forEach(option => {
             const newOption = document.createElement('option');
-            newOption.value = option.code; // Use 'code' from your fetched data as option value
-            newOption.textContent = option.code; // Use 'name' from your fetched data as option text
+            newOption.value = option.code;
+            newOption.textContent = option.code;
             areacodeDropdown.appendChild(newOption);
         });
-        // You can perform further operations with the retrieved data here
+
     })
     .catch(error => {
         console.error('There was a problem fetching data from the API:', error);
-        // Handle errors here
+
     });
 
 
@@ -35,21 +35,21 @@ fetch('https://run.mocky.io/v3/0cec2d23-1a06-4029-9e6d-304c034d6eae') //CompanyA
         return response.json();
     })
     .then(data => {
-        // Handle the data from the API
+
         const areacodeDropdown = document.getElementById('companyInput');
 
-        // Loop through the fetched data and create options for the dropdown
+
         data.forEach(option => {
             const newOption = document.createElement('option');
-            newOption.value = option.company; // Use 'code' from your fetched data as option value
-            newOption.textContent = option.company; // Use 'name' from your fetched data as option text
+            newOption.value = option.company;
+            newOption.textContent = option.company;
             areacodeDropdown.appendChild(newOption);
         });
-        // You can perform further operations with the retrieved data here
+
     })
     .catch(error => {
         console.error('There was a problem fetching data from the API:', error);
-        // Handle errors here
+
     });
 
 fetch('https://run.mocky.io/v3/bce7c401-0bc6-48d4-9604-94c8e893baa0') //SubjectAPI
@@ -60,21 +60,21 @@ fetch('https://run.mocky.io/v3/bce7c401-0bc6-48d4-9604-94c8e893baa0') //SubjectA
         return response.json();
     })
     .then(data => {
-        // Handle the data from the API
+
         const areacodeDropdown = document.getElementById('subjectInput');
 
-        // Loop through the fetched data and create options for the dropdown
+        n
         data.forEach(option => {
             const newOption = document.createElement('option');
-            newOption.value = option.subject; // Use 'code' from your fetched data as option value
-            newOption.textContent = option.subject; // Use 'name' from your fetched data as option text
+            newOption.value = option.subject;
+            newOption.textContent = option.subject;
             areacodeDropdown.appendChild(newOption);
         });
-        // You can perform further operations with the retrieved data here
+
     })
     .catch(error => {
         console.error('There was a problem fetching data from the API:', error);
-        // Handle errors here
+
     });
 
 
@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const menuIcon = document.querySelector('.menu-icon');
     const navBar = document.querySelector('.navigation-bar');
 
-    // Toggle active class on menu icon click
+
     menuIcon.addEventListener('click', function () {
         navBar.classList.toggle('active');
     });
