@@ -134,7 +134,7 @@
 
  #areacodeBox {
      display: flex;
-     align-items: stretch;
+     align-items: baseline;
  }
 
  #phoneInput {
