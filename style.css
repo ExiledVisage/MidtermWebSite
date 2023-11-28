@@ -1,0 +1,294 @@
+ * {
+     margin: 0;
+     padding: 0;
+     font-family: 'Poppins', sans-serif;
+     box-sizing: border-box;
+ }
+
+ body {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     background: url(backgroun2.png) no-repeat;
+     background-size: cover;
+ }
+
+ header {
+     content: '';
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     padding: 20px 100px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     z-index: 99;
+     box-shadow: 0px 0px 8px rgba(0, 0, 0, .6);
+     backdrop-filter: grayscale(80%);
+ }
+
+ .Logo {
+     font-size: 2em;
+     color: #fff;
+     user-select: none;
+ }
+
+ .navigation-bar a {
+     position: relative;
+     font-size: 1em;
+     color: #fff;
+     text-decoration: none;
+     font-weight: 550;
+     margin-left: 40px;
+ }
+
+ .navigation-bar a::after {
+     content: '';
+     position: absolute;
+     left: 0;
+     bottom: -6px;
+     width: 100%;
+     height: 3px;
+     background: #fff;
+     border-radius: 5px;
+     transform-origin: center;
+     transform: scaleX(0);
+     transition: transform .5s;
+ }
+
+ .navigation-bar a:hover::after {
+     transform: scaleX(1);
+ }
+
+ .navigation-bar .btn-Login-popup {
+     width: 120px;
+     height: 50px;
+     background: transparent;
+     border: 2px solid #fff;
+     outline: none;
+     border-radius: 4px;
+     cursor: pointer;
+     font-size: 1em;
+     color: #fff;
+     font-weight: 550;
+     margin-left: 40px;
+     transition: .5s;
+ }
+
+ .navigation-bar .btn-Login-popup:hover {
+     color: black;
+     background-color: white;
+     border-color: black;
+ }
+
+ .Sign-up-box {
+
+     position: relative;
+     width: 650px;
+     height: 800px;
+     background: transparent;
+     border: 2px solid rgba(255, 255, 255, .5);
+     border-radius: 20px;
+     backdrop-filter: blur(10px);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 100px
+ }
+
+ .Sign-up-box .form-box {
+     width: 100%;
+     padding: 40px;
+ }
+
+ .form-box h2 {
+     font-size: 2em;
+     color: #ffffff;
+     text-align: center;
+ }
+
+ .input-box {
+     position: relative;
+     width: 100%;
+     margin: 30px 0;
+ }
+
+ #nameBox {
+     display: flex;
+     align-items: baseline;
+ }
+
+ #phoneBox {
+     display: flex;
+ }
+
+ #areacodeInput {
+     width: 80px;
+     height: 30px;
+     margin-right: 50px;
+     border-radius: 5px;
+
+ }
+
+ #areacodeBox {
+     display: flex;
+     align-items: stretch;
+ }
+
+ #phoneInput {
+
+     height: 30px;
+     border-radius: 5px;
+ }
+
+ #nameInput {
+
+     height: 30px;
+     border-radius: 5px;
+     margin-right: 20px;
+
+ }
+
+ #surnameInput {
+
+     height: 30px;
+     border-radius: 5px;
+
+ }
+
+ #emailInput {
+
+     height: 30px;
+     border-radius: 5px;
+
+ }
+
+ #companyInput {
+
+     height: 30px;
+     width: 200px;
+     border-radius: 5px;
+
+ }
+
+ #subjectInput {
+
+     height: 30px;
+     width: 200px;
+     border-radius: 5px;
+
+ }
+
+ #yes-no-option {
+     margin-top: 20px;
+ }
+
+ #yesOption {
+     display: inline-block;
+     border-radius: 50%;
+     border: 2px solid #ccc;
+     margin-right: 10px;
+     margin-right: 80px;
+ }
+
+ .input-box .btn-Login-popup {
+     width: 120px;
+     height: 50px;
+     background: transparent;
+     border: 2px solid #fff;
+     outline: none;
+     border-radius: 4px;
+     cursor: pointer;
+     font-size: 1em;
+     color: #fff;
+     font-weight: 550;
+     margin-left: 40px;
+     transition: .5s;
+ }
+
+ .input-box .btn-Login-popup:hover {
+     color: black;
+     background-color: white;
+     border-color: black;
+ }
+
+ @media screen and (max-width: 985px) {
+     .navigation-bar {
+         display: none;
+         position: fixed;
+         top: 60px;
+         left: 0;
+         right: 0;
+         background-color: rgba(0, 0, 0, 0.8);
+         /* Adjust the transparency */
+         padding: 20px;
+         z-index: 999;
+         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+     }
+
+     .navigation-bar.active {
+         display: flex;
+         flex-direction: column;
+         /* Other styles */
+     }
+
+     .menu-icon {
+         display: block;
+         cursor: pointer;
+         font-size: 1.5em;
+         color: #fff;
+         user-select: none;
+     }
+
+     /* Styles for individual menu items */
+     .navigation-bar a {
+         color: #fff;
+         text-decoration: none;
+         margin-bottom: 10px;
+         /* Adjust spacing between menu items */
+     }
+
+     .navigation-bar a:hover {
+         color: #ff0;
+         /* Change color on hover if desired */
+     }
+ }
+
+ @media screen and (min-width: 985px) {
+     .menu-icon {
+         display: none;
+     }
+ }
+
+ @media screen and (max-width: 590px) {
+     .input-box::after {
+         display: none;
+     }
+ }
+
+ /* Add a border-bottom only for larger screens */
+ @media screen and (min-width: 591px) {
+     .input-box {
+         border-bottom: 2px solid #162938;
+         height: 60px;
+         /* Set the height here for larger screens */
+     }
+ }
+
+ @media screen and (max-width: 495px) {
+     #nameBox {
+         display: flex;
+         flex-direction: column;
+         align-items: stretch;
+     }
+ }
+
+ @media screen and (max-width: 550px) {
+     #phoneBox {
+         display: flex;
+         align-items: stretch;
+         flex-direction: column;
+     }
+ }
